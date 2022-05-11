@@ -1,0 +1,18 @@
+<div class="logo">
+  <a href="#"
+    ><img
+      src="http://www.pokemongobrasil.com/wp-content/uploads/2016/08/master_ball__01__by_adfpf1-d7ea28n.png"
+    />
+    Pokemax
+  </a>
+</div>
+
+<div class="pokemon-list">
+  <app-pokemon-card
+    *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [numero]="i + 1"
+  ></app-pokemon-card>
+</div>
+
+<!-- <div *ngFor="let pokemon of pokemons">Pokemón: {{ pokemon }}</div> -->
